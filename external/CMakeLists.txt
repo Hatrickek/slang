@@ -28,11 +28,6 @@ if(MSVC)
     )
 endif()
 
-# Vulkan headers
-if (NOT Vulkan::Headers)
-    add_subdirectory(vulkan EXCLUDE_FROM_ALL)
-endif()
-
 # SPIRV-Headers
 add_subdirectory(spirv-headers EXCLUDE_FROM_ALL)
 
